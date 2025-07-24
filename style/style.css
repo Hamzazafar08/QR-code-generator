@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+
+.container {
+  perspective: 1000px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  width: 320px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transform: rotateX(15deg) rotateY(10deg);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.5s ease;
+}
+
+.glass-card:hover {
+  transform: rotateX(0deg) rotateY(0deg);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.6);
+}
+
+.glass-card h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  font-size: 16px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  background: #ff416c;
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #ff6a5b, #ff6182);
+}
+
+.qr-output {
+  margin-top: 20px;
+}
+
+canvas {
+  margin-top: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
