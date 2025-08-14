@@ -10,3 +10,4 @@ This is a simple QR Code Generator built using HTML, CSS, and JavaScript.
 1. Open `index.html` in your browser.
 2. Enter the text or URL you want to encode.
 3. Click **Generate QR** to see the QR code.
+
